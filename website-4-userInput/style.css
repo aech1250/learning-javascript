@@ -1,0 +1,10 @@
+.inputField{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.inputField label, input, textarea{
+    resize: none;
+    margin-right: 5px;
+}
