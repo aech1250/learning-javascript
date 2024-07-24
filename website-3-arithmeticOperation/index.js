@@ -43,7 +43,7 @@ let students = 10; // Lets say in a class we have 30 students
 // 3. Multiplication, Division & Modulo
 // 4. Addition & Subtraction
 
-let result = 1 * 2 - 4 / 2 ** 3 + 1;
-    console.log(`The result is: ${result}`); // Exponent, Multiplication, Dividition, Addition, Subtraction
-    result = 6 / 2 ** (2 + 5);
-    console.log(`The result is: ${result}`); // Parenthesis, Exponent, Division
+// let result = 1 * 2 - 4 / 2 ** 3 + 1;
+//     console.log(`The result is: ${result}`); // Exponent, Multiplication, Dividition, Addition, Subtraction
+//     result = 6 / 2 ** (2 + 5);
+//     console.log(`The result is: ${result}`); // Parenthesis, Exponent, Division
