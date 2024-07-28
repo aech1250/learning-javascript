@@ -22,6 +22,10 @@ function isEven(x){
 function isOdd(isEven){
     return !isEven ? true: false;
 }
+function isEmail(email){
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+}
 
 console.log(`add(2, 2): ${add(2, 2)}`)
 console.log(`subtract(2, 2): ${subtract(2, 2)}`)
@@ -30,3 +34,4 @@ console.log(`divide(2, 2): ${divide(2, 2)}`)
 console.log(`mod(1, 2): ${mod(1, 2)}`)
 console.log(`isEven(2, 2): ${isEven(2, 2)}`)
 console.log(`isOdd(isEven(3)): ${isOdd(isEven(3))}`)
+console.log(`isEmail("hassanamir1250@gmail.com"): ${isEmail("hassanamir1250@gmail.com")}`)
