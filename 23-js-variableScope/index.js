@@ -17,6 +17,7 @@ function f2(){
 //---------------Global Scope-----------------
 let y = 2;
 function a1(){
+    let y = 1 //local variable will be used 
     console.log(y)
 }
 function a2(){
