@@ -87,3 +87,11 @@ body{
     height: 100px;
     width: 100px;
 }
+footer{
+    position: fixed;
+    bottom: 0;
+}
+footer p{
+    margin: 0;
+    color: black;
+}
