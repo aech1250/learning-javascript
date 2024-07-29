@@ -1,0 +1,89 @@
+html::-webkit-scrollbar {
+    width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: black white;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url(https://images.unsplash.com/photo-1558346648-9757f2fa4474?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+                center / cover no-repeat ;
+}
+#container{
+    height: 75%;
+    width: 75%;
+    border: 1px solid rgb(161, 158, 158);
+    border-radius: 10px;
+    background-color: 0 10px 1px rgba(70, 68, 68, 0.25);
+    backdrop-filter: blur(5px);
+}
+#title{
+    font-size: 3em;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+#inputField{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+#inputField label{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+#inputField input{
+    border-radius: 5px;
+    height: 23px;
+}
+#inputField button{
+    font-family:'Times New Roman', Times, serif;
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+#displayInNumbers{
+    max-width: 100%;
+    white-space: normal;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.25em;
+    margin: 20px;
+}
+#displayInImages{
+    overflow: auto;
+    max-height: 260px;
+}
+#displayInImages::-webkit-scrollbar {
+    display: none;
+}
+#displayInImages img{
+    margin: 0;
+    height: 100px;
+    width: 100px;
+}
