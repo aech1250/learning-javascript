@@ -3,30 +3,22 @@ const rollBtn = document.getElementById("rollBtn");
 const displayInNumbers = document.getElementById("displayInNumbers");
 const displayInImages = document.getElementById("displayInImages");
 
-let dice = [];
-let displayInNum = "";
-let displayInImg = "";
-let numberOfDice = 0;
+
 
     rollBtn.onclick = function (){
         if(userInput.value != "" && !isNaN(userInput.value) && userInput.value <= 35  && userInput.value != 0){
-            numberOfDice = Number(userInput.value);
-            dice = [];
-            displayInImg = "";
-
-
-            for(let i = 0; i < numberOfDice; i++){
-                dice.push(Math.floor((Math.random() * 6) + 1));
-            }
-
-            displayInNum = dice.join(",");
-
-            displayInNumbers.textContent = `Dice: ${displayInNum}`;
+            let displayInNum = [];
+            let displayInImg = [];
+            let numberOfDice = Number(userInput.value);
+            let randomNumber = 0;
             
-            for(let i = 0; i < dice.length; i++){
-                displayInImg += `<img src="./images/dice-${dice[i]}.svg"></img>`
+            for(let i = 0; i < numberOfDice; i++){
+                randomNumber = Math.floor((Math.random() * 6) + 1);    
+                displayInNum.push(randomNumber);
+                displayInImg.push(`<img src="./images/dice-${randomNumber}.svg"></img>`);
             }
 
+            displayInNumbers.textContent = `Dice: ${displayInNum.join(", ")}.`;
             displayInImages.innerHTML = displayInImg;
 
         }else if(userInput.value == 0){
