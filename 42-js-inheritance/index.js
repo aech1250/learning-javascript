@@ -16,7 +16,6 @@ class Animal {
         console.log(`This ${this.name} is sleeping.`)
     }
 }
-
 class Rabbit extends Animal {
     name = "Rabbit";
 
@@ -24,7 +23,6 @@ class Rabbit extends Animal {
         console.log(`This ${this.name} is running.`);
     }
 }
-
 class Fish extends Animal {
     name = "Fish";
 
@@ -32,7 +30,6 @@ class Fish extends Animal {
         console.log(`This ${this.name} is swimming.`);
     }
 }
-
 class Hawk extends Animal {
     name = "Hawk";
 
