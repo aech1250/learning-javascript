@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#title {
+    position: fixed;
+    top: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.5em;
+}
+
+#stopwatch-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    border: 5px solid black;
+    border-radius: 25px;
+}
+
+#display-time {
+    font-family: monospace;
+    font-size: 4em;
+    margin: 50px 5px 0px 5px;
+
+}
+
+#controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 25px 0px;
+}
+
+#controls button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    padding: 5px 10px;
+    color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#startBtn {
+    background-color: rgb(50, 255, 50);
+}
+
+#startBtn:hover {
+    background-color: rgb(43, 170, 43);
+}
+
+#stopBtn {
+    background-color: red;
+}
+
+#stopBtn:hover {
+    background-color: rgb(163, 28, 28);
+}
+
+#resetBtn {
+    background-color: rgb(48, 128, 233);
+}
+
+#resetBtn:hover {
+    background-color: rgb(32, 86, 156);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
