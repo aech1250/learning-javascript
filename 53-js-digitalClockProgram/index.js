@@ -5,20 +5,17 @@ let minutes;
 let seconds;
 let meridiem;
 
-function padZero(num){
-    return num < 10 ? `0${num}` : num;
-}
-
 function clock(){
     const date = new Date();
     hours = date.getHours();
-    minutes = date.getMinutes();
-    seconds = date.getSeconds();
-    displayHours = hours % 12;
-
     meridiem = hours > 12 ? "PM" : "AM";
+    hours = hours % 12 || 12;
+    hours = hours.toString().padStart(2, 0);
+    minutes = date.getMinutes().toString().padStart(2, 0);
+    seconds = date.getSeconds().toString().padStart(2, 0);
 
-    displayTime.textContent = `${padZero(displayHours)}:${padZero(minutes)}:${padZero(seconds)} ${padZero(meridiem)}`
+
+    displayTime.textContent = `${hours}:${minutes}:${seconds} ${meridiem}`
 }
 
 setInterval(clock, 1000);
