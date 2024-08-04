@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#myBox {
+    background-color: lightgreen;
+    height: 300px;
+    width: 300px;
+    font-size: 4em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin-top: 10px;
+}
