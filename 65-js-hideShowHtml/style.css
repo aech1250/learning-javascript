@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    display: block;
+    height: 225px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px 20px;
+}
