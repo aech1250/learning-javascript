@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+
+    <h1 id="title">Rock - Paper - Scissors</h1>
+    <div id="controls">
+        <button onclick="playGame('rock')">👊</button>
+        <button onclick="playGame('paper')">✋</button>
+        <button onclick="playGame('scissor')">✌️</button>
+    </div>
+    <div id="moves">
+        <label id="player-move">Player: </label>
+        <label id="computer-move">Computer: </label>
+    </div>
+    <div id="display-result">
+        You won:
+    </div>
+    <div id="score-board">
+        <label>Player's Score: <a id="player-score">0</a></label>
+        <label>Computer's Score: <a id="computer-score">0</a></label>
+    </div>
+    <footer>
+        <p>&copy; Created by Aech</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
