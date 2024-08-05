@@ -1,0 +1,10 @@
+.myButtons {
+    display: block;
+    font-size: 2em;
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: rgb(0, 153, 255);
+    color: white;
+}
