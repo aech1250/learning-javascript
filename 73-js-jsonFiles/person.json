@@ -1,0 +1,11 @@
+{
+    "name": "Hassan",
+    "age": 21,
+    "isStudent": true,
+    "gpa": 3.64,
+    "hobbies": [
+        "movies",
+        "videogames",
+        "coding"
+    ]
+}
